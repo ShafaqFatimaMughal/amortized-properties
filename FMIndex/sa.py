@@ -1,13 +1,6 @@
 from collections import defaultdict
 from itertools import zip_longest, islice
 
-def suffix_array_naive(text):
-    """ Returns list of offsets in suffix array of text.
-     Not efficient approach since n strings are created. Memory complexity is n^2.
-     TODO come up with something more efficient """
-    satups = sorted([(text[i:], i) for i in range(len(text))])
-    # extract and return just the offsets
-    return map(lambda x: x[1], satups)
 
 def sort_bucket(str, bucket, bucket_level=0, keylen=6):
     d = defaultdict(list)

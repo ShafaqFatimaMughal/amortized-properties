@@ -93,9 +93,9 @@ def create_f_column(text):
 def create_fm_index(text):
     t = terminate_string(text)
     # sa = suffix_array_manber_myers(t)
-    # sa = suffix_array_best(t)
+    sa = suffix_array_best(t)
     # sa = suffix_array_naive(t)
-    sa = suffix_array_quicksort(t)
+    # sa = suffix_array_quicksort(t)
     bwt = bw_transform(t, sa)
     ranks = calculate_ranks(bwt)
     f_column = create_f_column(t)

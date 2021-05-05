@@ -300,15 +300,15 @@ def line_plot(x_axis, suffix_y, fm_y, line_y=False):
 # expected_fm_time(250, 50, 'DataSets/1000.txt', 'GGAATT', 'FM/-Index', None)
 # expected_fm_time(250, 50, 'DataSets/10000.txt', 'CTCGTGA', 'FM-Index', None)
 # expected_fm_time(250, 50, 'DataSets/100000.txt', 'TATGCAC', 'FM-Index', None)
-expected_fm_time(250, 25, 'DataSets/1000000.txt', 'AGTACAGC', 'FM-Index', None)
+# expected_fm_time(250, 25, 'DataSets/1000000.txt', 'AGTACAGC', 'FM-Index', None)
 # expected_fm_time(250, 25, 'DataSets/2500000.txt', 'CACATTT', 'FM-Index', None)
 # expected_fm_time(250, 50, 'DataSets/5000000.txt', 'GGACTACT', 'FM-Index', None)
 
 ############################################ Line Plot Analysis ######################################################################################################
-x_axis = np.array([math.log(1000, 10), math.log(10000, 10), math.log(100000, 10), math.log(1000000, 10), math.log(1250000, 10)])
-line_y = np.array([math.log(0.0013, 10), math.log(0.0056, 10), math.log(0.040, 10), math.log(0.225, 10), math.log(0.6, 10)])
-suffix_x = np.array([math.log(0.00072, 10), math.log(0.0008, 10), math.log(0.00116, 10), math.log(0.00120, 10), math.log(0.0077, 10)])
-fm_y = np.array([math.log(0.0006, 10), math.log(0.00065, 10), math.log(0.0009, 10), math.log(0.0015, 10), math.log(0.0050, 10)])
+# x_axis = np.array([math.log(1000, 10), math.log(10000, 10), math.log(100000, 10), math.log(1000000, 10), math.log(1250000, 10)])
+# line_y = np.array([math.log(0.0013, 10), math.log(0.0056, 10), math.log(0.040, 10), math.log(0.225, 10), math.log(0.6, 10)])
+# suffix_x = np.array([math.log(0.00072, 10), math.log(0.0008, 10), math.log(0.00116, 10), math.log(0.00120, 10), math.log(0.0077, 10)])
+# fm_y = np.array([math.log(0.0006, 10), math.log(0.00065, 10), math.log(0.0009, 10), math.log(0.0015, 10), math.log(0.0050, 10)])
 # line_plot(x_axis, suffix_x, fm_y, line_y)    
 # line_plot(x_axis, suffix_x, fm_y)
 
@@ -325,13 +325,13 @@ fm_y = np.array([math.log(0.0006, 10), math.log(0.00065, 10), math.log(0.0009, 1
 # print(I.gene_analysis('CCCC', 'AGTCA', 150), '150')
 
 ############################################## Analyzing Space ##############################################################################################
-# I = Implementation('DataSets/1000.txt')
+I = Implementation('DataSets/10000.txt')
 
-# with open('DataSets/1000.txt', 'r') as file:
-#         data = file.read().replace('\n', '')
-#         tree = suffix_tree(data)
+with open('DataSets/1000.txt', 'r') as file:
+        data = file.read().replace('\n', '')
+        tree = suffix_tree(data)
 
-# s1 = sys.getsizeof(I)
-# s2 = sys.getsizeof(tree)
-# print('FM', s1)
-# print('suffix', s2)
+s1 = sys.getsizeof(I)
+s2 = sys.getsizeof(tree)
+print('FM', s1)
+print('suffix', s2)
