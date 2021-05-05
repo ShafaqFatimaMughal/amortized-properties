@@ -2,9 +2,8 @@ from FMIndex.fmindex import *
 from SuffixTree.suffixtree import *
 from matplotlib import pyplot as plt
 import numpy as np
-import time
-import math
-import sys
+import time, math, sys
+
 class Implementation:
     def __init__(self, location): 
         self.fileloc = location
@@ -250,7 +249,7 @@ def expected_fm_time(numExp, sample, filename, substring, title, color):
             print( I.search(substring) )
             end_time = time.time()
             timeTaken.append(end_time-start_time)
-            print(i,j)
+            # print(i,j)
         expected[i] = sum(timeTaken)/sample
     plot(expected, title, I.n, color)
 
@@ -270,7 +269,7 @@ def line_plot(x_axis, suffix_y, fm_y, line_y=False):
     plt.show()
 
 ######################################## Testing for 1 search #########################################################################################################
-# print(get_FM_build_time('DataSets/100000.txt'))
+print(get_FM_build_time('DataSets/100000.txt'))
 
 # linear_find('DataSets/10000.txt', 'AAT')
 # suffix_tree_find('DataSets/10000.txt', 'AAT')
@@ -323,15 +322,3 @@ def line_plot(x_axis, suffix_y, fm_y, line_y=False):
 # print(I.gene_analysis('CCCC', 'CTMK'))
 # print(I.gene_analysis('CCCC', 'AGTCA'))
 # print(I.gene_analysis('CCCC', 'AGTCA', 150), '150')
-
-############################################## Analyzing Space ##############################################################################################
-I = Implementation('DataSets/10000.txt')
-
-with open('DataSets/1000.txt', 'r') as file:
-        data = file.read().replace('\n', '')
-        tree = suffix_tree(data)
-
-s1 = sys.getsizeof(I)
-s2 = sys.getsizeof(tree)
-print('FM', s1)
-print('suffix', s2)
