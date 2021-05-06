@@ -32,13 +32,7 @@ class Ui_AnalysisWindow(object):
         AnalysisWindow.setObjectName("AnalysisWindow")
         AnalysisWindow.resize(634, 519)
         AnalysisWindow.setFixedSize(634, 519)
-        AnalysisWindow.setStyleSheet("background: black;")
         
-        #app = QtGui.QApplication([])
-        #AnalysisWindow.setStyleSheet('AnalysisWindow{border-color: 1px solid black;}')
-        #app.exec_()
-        self.frame = QFrame(self)
-        self.frame.setStyleSheet("QWidget{}")
         self.centralwidget = QtWidgets.QWidget(AnalysisWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label5 = QtWidgets.QLabel(self.centralwidget)
