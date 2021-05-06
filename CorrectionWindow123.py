@@ -168,6 +168,7 @@ class Ui_CorrectionWindow(object):
         self.retranslateUi(CorrectionWindow)
         QtCore.QMetaObject.connectSlotsByName(CorrectionWindow)
 
+        self.textEdit_3.setDisabled(True)
         #connect button to function
         #self.CorrectButton_2.clicked.connect(lambda: self.Correct(self.textEdit3_2.toPlainText(), self.textEdit4_2.toPlainText(), int(self.textEdit5_2.toPlainText())))
         self.CorrectButton_2.clicked.connect(self.cl)
@@ -214,7 +215,7 @@ class Ui_CorrectionWindow(object):
         if self.textEdit_3.toPlainText()=="":
              self.MessageBoxDirectoryError()
 
-        elif self.textEdit3_2.toPlainText()=="" or self.textEdit4_2.toPlainText()=="" or (self.textEdit3_2.toPlainText()=="" and self.textEdit4_2.toPlainText()==""):
+        elif self.textEdit3_2.toPlainText()=="" or self.textEdit3_2.toPlainText()=="Sequence1" or self.textEdit4_2.toPlainText()=="" or self.textEdit4_2.toPlainText()=="Sequence2" or ((self.textEdit3_2.toPlainText()=="" and self.textEdit4_2.toPlainText()=="")) or ((self.textEdit3_2.toPlainText()=="Sequence1" and self.textEdit4_2.toPlainText()=="Sequence2")):
              self.MessageBoxGeneError()
 
         else:

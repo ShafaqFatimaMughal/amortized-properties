@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog, QFrame, QColorDiaglog
+from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog
 
 from PyQt5.QtCore import QDir
 from PyQt5.QtWidgets import QMessageBox
@@ -32,6 +32,7 @@ class Ui_AnalysisWindow(object):
         AnalysisWindow.setObjectName("AnalysisWindow")
         AnalysisWindow.resize(634, 519)
         AnalysisWindow.setFixedSize(634, 519)
+        AnalysisWindow.setStyleSheet('background-color:black;')
         
         self.centralwidget = QtWidgets.QWidget(AnalysisWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -175,6 +176,7 @@ class Ui_AnalysisWindow(object):
         self.retranslateUi(AnalysisWindow)
         QtCore.QMetaObject.connectSlotsByName(AnalysisWindow)
 
+        self.textEdit_2.setDisabled(True)
         #connect button to function
         self.CorrectButton.clicked.connect(self.al)
         self.GoBack.clicked.connect(self.openMainWindow)
@@ -218,7 +220,7 @@ class Ui_AnalysisWindow(object):
     def Analyse(self, string1, string2, approxlength=None):
         if self.textEdit_2.toPlainText() == "":
                 self.MessageBoxDirectoryError()
-        elif self.textEdit3.toPlainText()=="" or self.textEdit4.toPlainText()=="" or ((self.textEdit3.toPlainText()=="" and self.textEdit4.toPlainText()=="")):
+        elif self.textEdit3.toPlainText()=="" or self.textEdit3.toPlainText()=="Sequence1" or self.textEdit4.toPlainText()=="" or self.textEdit4.toPlainText()=="Sequence2" or ((self.textEdit3.toPlainText()=="" and self.textEdit4.toPlainText()=="")) or ((self.textEdit3.toPlainText()=="Sequence1" and self.textEdit4.toPlainText()=="Sequence2")):
                 self.MessageBoxGeneError()
         else:
                 self.Imp = Implementation(self.textEdit_2.toPlainText())

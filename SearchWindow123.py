@@ -183,6 +183,8 @@ class Ui_SearchWindow(object):
         self.GoBack.clicked.connect(SearchWindow.close)
         #Choose dir button
         self.DataSetButton.clicked.connect(self.openDialogBox)
+        #preventing text in choose data textedit
+        self.textEdit_2.setDisabled(True)
 
     def retranslateUi(self, SearchWindow):
         _translate = QtCore.QCoreApplication.translate
