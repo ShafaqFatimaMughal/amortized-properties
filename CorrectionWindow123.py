@@ -28,7 +28,8 @@ class Ui_CorrectionWindow(object):
         CorrectionWindow.setObjectName("CorrectionWindow")
         CorrectionWindow.resize(666, 556)
         CorrectionWindow.setFixedSize(666, 556)
-        CorrectionWindow.showMaximized()
+        #CorrectionWindow.showMaximized()
+        CorrectionWindow.showFullScreen()
         CorrectionWindow.setStyleSheet("\n"
 "background: black;\n"
 "")
