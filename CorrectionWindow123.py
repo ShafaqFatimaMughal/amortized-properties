@@ -248,6 +248,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     CorrectionWindow = QtWidgets.QMainWindow()
+    CorrectionWindow.showMaximized()
     ui = Ui_CorrectionWindow()
     ui.setupUi(CorrectionWindow)
     CorrectionWindow.show()
