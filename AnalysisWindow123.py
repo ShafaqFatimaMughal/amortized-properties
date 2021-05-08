@@ -13,7 +13,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFil
 
 from PyQt5.QtCore import QDir
 from PyQt5.QtWidgets import QMessageBox
-from Implementation import *
+from FMIndex.Implementation import *
 #from MainWindow import *
 #from MainWindow import Ui_MainWindow
 
