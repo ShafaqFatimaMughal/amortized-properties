@@ -12,7 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog
 from PyQt5.QtCore import QDir
 from PyQt5.QtWidgets import QMessageBox
-from FMIndex.Implementation import *
+from Implementation import *
 
 
 class Ui_CorrectionWindow(object):
@@ -28,8 +28,8 @@ class Ui_CorrectionWindow(object):
         CorrectionWindow.setObjectName("CorrectionWindow")
         CorrectionWindow.resize(666, 556)
         CorrectionWindow.setFixedSize(666, 556)
-        #CorrectionWindow.showMaximized()
-        CorrectionWindow.showFullScreen()
+        CorrectionWindow.showMaximized()
+        #CorrectionWindow.showFullScreen()
         CorrectionWindow.setStyleSheet("\n"
 "background: black;\n"
 "")
