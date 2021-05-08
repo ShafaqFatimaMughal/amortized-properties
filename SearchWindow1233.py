@@ -258,9 +258,10 @@ class Ui_SearchWindow(object):
 
 if __name__ == "__main__":
     import sys
+    os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
     app = QtWidgets.QApplication(sys.argv)
-    SearchWindow = QtWidgets.QMainWindow()
     app.setAttribute(QtCore.Qt.AA_DisableHighDpiScaling)
+    SearchWindow = QtWidgets.QMainWindow()
     ui = Ui_SearchWindow()
     ui.setupUi(SearchWindow)
     SearchWindow.show()
