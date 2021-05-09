@@ -1,4 +1,5 @@
 from FMIndex.fmindex import *
+from SearchnAnalyze import *
 import math
 class Implementation:
     def __init__(self, location): 
