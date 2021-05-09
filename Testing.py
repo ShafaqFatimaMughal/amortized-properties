@@ -1,15 +1,4 @@
-<<<<<<< Updated upstream
 from SearchnAnalyze import *
-=======
-from FMIndex.Implementation import *
-# from TimeAnalysis import *
-from FMIndex.fmindex import *
-from RabinKarp.rabinkarp import *
-from SuffixTree.suffixtree import *
-from matplotlib import pyplot as plt
-import numpy as np
-import time, math, sys
->>>>>>> Stashed changes
 
 ######################################## Testing for 1 search #########################################################################################################
 # print(get_FM_build_time('DataSets/100000.txt'))

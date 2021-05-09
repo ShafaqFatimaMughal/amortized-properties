@@ -14,6 +14,7 @@ from PyQt5.QtCore import QDir
 from PyQt5.QtWidgets import QMessageBox
 from Implementation import *
 from PyQt5.QtCore import QSize
+from SearchnAnalyze import *
 
 class Ui_SearchWindow(object):
 

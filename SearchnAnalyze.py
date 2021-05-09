@@ -1,4 +1,4 @@
-from FMIndex.Implementation import *
+from Implementation import *
 from FMIndex.fmindex import *
 from RabinKarp.rabinkarp import *
 from SuffixTree.suffixtree import *
