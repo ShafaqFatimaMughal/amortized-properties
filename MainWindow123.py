@@ -28,6 +28,7 @@ class Ui_MainWindow(object):
         self.ui = Ui_SearchWindow()
         self.ui.setupUi(self.window)
         QtGui.QFontDatabase.addApplicationFont("GillSansUltraBold.ttf")
+        QtGui.QFontDatabase.addApplicationFont("msuighur.ttf")
         self.window.show()
 
     def openCorrectionWindow(self):
