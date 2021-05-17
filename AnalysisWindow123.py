@@ -100,7 +100,7 @@ class Ui_AnalysisWindow(object):
         self.textEdit3.setStyleSheet("color: white;")
         self.textEdit3.setObjectName("textEdit3")
         self.heading = QtWidgets.QLabel(self.centralwidget)
-        self.heading.setGeometry(QtCore.QRect(190, 10, 300, 41))
+        self.heading.setGeometry(QtCore.QRect(190, 10, 300, 45))
         font = QtGui.QFont()
         font.setFamily("Gill Sans Ultra Bold")
         font.setPointSize(18)
