@@ -13,7 +13,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFil
 from PyQt5.QtCore import  QSize
 from PyQt5.QtCore import QDir
 from PyQt5.QtWidgets import QMessageBox
-from Implementation import *
+from SearchnAnalyze import *
 from SearchWindow1233 import Ui_SearchWindow
 from CorrectionWindow123 import Ui_CorrectionWindow
 from AnalysisWindow123 import Ui_AnalysisWindow
@@ -49,7 +49,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label1 = QtWidgets.QLabel(self.centralwidget)
-        self.label1.setGeometry(QtCore.QRect(75, 10, 361, 16))
+        self.label1.setGeometry(QtCore.QRect(100, 10, 261, 16))
         font = QtGui.QFont()
         font.setFamily("Gill Sans Ultra Bold")
         font.setPointSize(12)
@@ -60,7 +60,7 @@ class Ui_MainWindow(object):
         self.label1.setStyleSheet("color: white;")
         self.label1.setObjectName("label1")
         self.label2 = QtWidgets.QLabel(self.centralwidget)
-        self.label2.setGeometry(QtCore.QRect(80, 30, 361, 16))
+        self.label2.setGeometry(QtCore.QRect(100, 30, 261, 16))
         font = QtGui.QFont()
         font.setFamily("Gill Sans Ultra Bold")
         font.setPointSize(12)
@@ -70,7 +70,7 @@ class Ui_MainWindow(object):
         self.label2.setStyleSheet("color: white;")
         self.label2.setObjectName("label2")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(70, 280, 391, 16))
+        self.label_2.setGeometry(QtCore.QRect(90, 280, 291, 16))
         font = QtGui.QFont()
         font.setFamily("Gill Sans Ultra Bold")
         font.setPointSize(11)
@@ -142,7 +142,7 @@ class Ui_MainWindow(object):
         self.label.setGeometry(QtCore.QRect(0, 70, 461, 181))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("dna.jpg"))
-        self.label.setScaledContents(False)
+        self.label.setScaledContents(True)
         self.label.setObjectName("label")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
