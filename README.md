@@ -20,9 +20,9 @@ Along with testing the application you can also test the algorithms separately, 
 All DNA Data Sets for testing purposes have been taken from http://www.faculty.ucr.edu/~mmaduro/random.htm 
   
 ## Resources and References 
-https://www.geeksforgeeks.org/pattern-searching-using-suffix-tree/
-https://www.geeksforgeeks.org/burrows-wheeler-data-transform-algorithm/
-https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/
-https://www.geeksforgeeks.org/suffix-array-set-1-introduction/
-https://www.labri.fr/perso/ruricaru/bioinfo_master2/cours3.pdf
-https://web.stanford.edu/class/cs262/presentations/lecture5.pdf
+* https://www.geeksforgeeks.org/pattern-searching-using-suffix-tree/
+* https://www.geeksforgeeks.org/burrows-wheeler-data-transform-algorithm/
+* https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/
+* https://www.geeksforgeeks.org/suffix-array-set-1-introduction/
+* https://www.labri.fr/perso/ruricaru/bioinfo_master2/cours3.pdf
+* https://web.stanford.edu/class/cs262/presentations/lecture5.pdf
