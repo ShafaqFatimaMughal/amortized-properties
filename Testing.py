@@ -1,4 +1,4 @@
-from SearchnAnalyze import *
+from Resources.SearchnAnalyze import *
 
 ######################################## Testing for 1 search #########################################################################################################
 # print(get_FM_build_time('DataSets/100000.txt'))
