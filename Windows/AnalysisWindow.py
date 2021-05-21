@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog
 
-from PyQt5.QtCore import QDir
+from PyQt5.QtCore import QDir, Qt
 from PyQt5.QtWidgets import QMessageBox
 from Resources.Implementation import *
 
@@ -30,13 +30,14 @@ class Ui_AnalysisWindow(object):
         self.w = 634
         self.h = 519
         AnalysisWindow.setObjectName("AnalysisWindow")
-        AnalysisWindow.resize(634, 519)
-        AnalysisWindow.setFixedSize(634, 519)
+        AnalysisWindow.resize(self.w, self.h)
+        AnalysisWindow.setFixedSize(self.w, self.h)
         AnalysisWindow.setStyleSheet('background-color:black;')
         self.centralwidget = QtWidgets.QWidget(AnalysisWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label5 = QtWidgets.QLabel(self.centralwidget)
-        self.label5.setGeometry(QtCore.QRect(328, 180, 30, 21))
+        self.label5.setGeometry(QtCore.QRect(self.w//2 - 30//2 + 24, 180, 30, 21))
+        self.label5.setAlignment(QtCore.Qt.AlignCenter)
         font = QtGui.QFont()
         font.setFamily("Microsoft Uighur")
         font.setPointSize(14)
@@ -96,7 +97,7 @@ class Ui_AnalysisWindow(object):
 "")
         self.CorrectButton.setObjectName("CorrectButton")
         self.textEdit3 = QtWidgets.QTextEdit(self.centralwidget)
-        self.textEdit3.setGeometry(QtCore.QRect(self.w//2 - 231//2, 170, 231, 51))
+        self.textEdit3.setGeometry(QtCore.QRect(self.w//2 - self.w//4 - 231//2 + 45, 170, 231, 51))
         self.textEdit3.setStyleSheet("color: white;")
         self.textEdit3.setObjectName("textEdit3")
         self.heading = QtWidgets.QLabel(self.centralwidget)
@@ -111,11 +112,11 @@ class Ui_AnalysisWindow(object):
         self.heading.setStyleSheet("color: white;")
         self.heading.setObjectName("heading")
         self.textEdit4 = QtWidgets.QTextEdit(self.centralwidget)
-        self.textEdit4.setGeometry(QtCore.QRect(360, 170, 231, 51))
+        self.textEdit4.setGeometry(QtCore.QRect(self.w//2 + self.w//4 - 231//2 + 5, 170, 231, 51))
         self.textEdit4.setStyleSheet("color: white;")
         self.textEdit4.setObjectName("textEdit4")
         self.textEdit = QtWidgets.QTextEdit(self.centralwidget)
-        self.textEdit.setGeometry(QtCore.QRect(70, 320, 521, 71))
+        self.textEdit.setGeometry(QtCore.QRect(self.w//2 - 521//2, 320, 521, 71))
         self.textEdit.setStyleSheet("color: white;")
         self.textEdit.setObjectName("textEdit")
         self.GoBack = QtWidgets.QPushButton(self.centralwidget)
@@ -167,7 +168,7 @@ class Ui_AnalysisWindow(object):
         self.textEdit_2.setObjectName("textEdit_2")
         AnalysisWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(AnalysisWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 634, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, self.w, 21))
         self.menubar.setObjectName("menubar")
         AnalysisWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(AnalysisWindow)
