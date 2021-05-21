@@ -25,6 +25,8 @@ class Ui_CorrectionWindow(object):
         self.window.show()
 
     def setupUi(self, CorrectionWindow):
+        self.w = 666
+        self.h = 556
         CorrectionWindow.setObjectName("CorrectionWindow")
         CorrectionWindow.resize(666, 556)
         CorrectionWindow.setFixedSize(666, 556)
@@ -56,7 +58,8 @@ class Ui_CorrectionWindow(object):
         self.textEdit5_2.setStyleSheet("color: white;")
         self.textEdit5_2.setObjectName("textEdit5_2")
         self.label2_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label2_2.setGeometry(QtCore.QRect(40, 110, 461, 21))
+        self.label2_2.setGeometry(QtCore.QRect(0, 110, self.w, 21))
+        self.label2_2.setAlignment(QtCore.Qt.AlignCenter)
         font = QtGui.QFont()
         font.setFamily("Microsoft Uighur")
         font.setPointSize(18)
@@ -72,7 +75,7 @@ class Ui_CorrectionWindow(object):
         self.label_2.setStyleSheet("color: white;")
         self.label_2.setObjectName("label_2")
         self.CorrectButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.CorrectButton_2.setGeometry(QtCore.QRect(300, 290, 101, 31))
+        self.CorrectButton_2.setGeometry(QtCore.QRect(self.w//2 - 101//2, 290, 101, 31))
         font = QtGui.QFont()
         font.setFamily("Microsoft Uighur")
         font.setPointSize(-1)
@@ -105,7 +108,8 @@ class Ui_CorrectionWindow(object):
         self.textEdit_2.setStyleSheet("color: white;")
         self.textEdit_2.setObjectName("textEdit_2")
         self.label1_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label1_2.setGeometry(QtCore.QRect(170, 10, 320, 31))
+        self.label1_2.setGeometry(QtCore.QRect(0, 10, self.w, 31))
+        self.label1_2.setAlignment(QtCore.Qt.AlignCenter)
         font = QtGui.QFont()
         font.setFamily("Gill Sans Ultra Bold")
         font.setPointSize(18)

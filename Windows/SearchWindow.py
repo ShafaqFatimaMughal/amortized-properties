@@ -26,6 +26,8 @@ class Ui_SearchWindow(object):
         self.window.show()
 
     def setupUi(self, SearchWindow):
+        self.w = 545
+        self.h = 520
         SearchWindow.setObjectName("SearchWindow")
         SearchWindow.resize(545, 520)
         SearchWindow.setFixedSize(545, 520)
@@ -72,7 +74,8 @@ class Ui_SearchWindow(object):
         self.textEdit1.setStyleSheet("color: white;")
         self.textEdit1.setObjectName("textEdit1")
         self.label1 = QtWidgets.QLabel(self.centralwidget)
-        self.label1.setGeometry(QtCore.QRect(130, 40, 320, 50))
+        self.label1.setGeometry(QtCore.QRect(0, 40, self.w, 50))
+        self.label1.setAlignment(QtCore.Qt.AlignCenter)
         font = QtGui.QFont()
         font.setFamily("Gill Sans Ultra Bold")
         font.setPointSize(20)

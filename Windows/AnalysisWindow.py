@@ -27,11 +27,12 @@ class Ui_AnalysisWindow(object):
         self.window.show()
 
     def setupUi(self, AnalysisWindow):
+        self.w = 634
+        self.h = 519
         AnalysisWindow.setObjectName("AnalysisWindow")
         AnalysisWindow.resize(634, 519)
         AnalysisWindow.setFixedSize(634, 519)
         AnalysisWindow.setStyleSheet('background-color:black;')
-        
         self.centralwidget = QtWidgets.QWidget(AnalysisWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label5 = QtWidgets.QLabel(self.centralwidget)
@@ -55,7 +56,8 @@ class Ui_AnalysisWindow(object):
         self.textEdit5.setStyleSheet("color: white;")
         self.textEdit5.setObjectName("textEdit5")
         self.label3 = QtWidgets.QLabel(self.centralwidget)
-        self.label3.setGeometry(QtCore.QRect(50, 70, 800, 20))
+        self.label3.setGeometry(QtCore.QRect(0, 70, self.w, 20))
+        self.label3.setAlignment(QtCore.Qt.AlignCenter)
         font = QtGui.QFont()
         font.setFamily("Microsoft Uighur")
         font.setPointSize(16)
@@ -73,7 +75,7 @@ class Ui_AnalysisWindow(object):
         self.label.setStyleSheet("color: white;")
         self.label.setObjectName("label")
         self.CorrectButton = QtWidgets.QPushButton(self.centralwidget)
-        self.CorrectButton.setGeometry(QtCore.QRect(270, 290, 141, 21))
+        self.CorrectButton.setGeometry(QtCore.QRect(self.w//2 - 141//2, 290, 141, 21))
         font = QtGui.QFont()
         font.setFamily("Microsoft Uighur")
         font.setPointSize(-1)
@@ -94,11 +96,12 @@ class Ui_AnalysisWindow(object):
 "")
         self.CorrectButton.setObjectName("CorrectButton")
         self.textEdit3 = QtWidgets.QTextEdit(self.centralwidget)
-        self.textEdit3.setGeometry(QtCore.QRect(90, 170, 231, 51))
+        self.textEdit3.setGeometry(QtCore.QRect(self.w//2 - 231//2, 170, 231, 51))
         self.textEdit3.setStyleSheet("color: white;")
         self.textEdit3.setObjectName("textEdit3")
         self.heading = QtWidgets.QLabel(self.centralwidget)
-        self.heading.setGeometry(QtCore.QRect(190, 10, 300, 45))
+        self.heading.setGeometry(QtCore.QRect(0, 10, self.w, 45))
+        self.heading.setAlignment(QtCore.Qt.AlignCenter)
         font = QtGui.QFont()
         font.setFamily("Gill Sans Ultra Bold")
         font.setPointSize(18)
