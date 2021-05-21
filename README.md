@@ -24,9 +24,13 @@ All DNA Data Sets for testing purposes have been taken from http://www.faculty.u
 ## Resources and References 
 * https://www.geeksforgeeks.org/pattern-searching-using-suffix-tree/
 * https://www.geeksforgeeks.org/burrows-wheeler-data-transform-algorithm/
-* https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/
 * https://www.geeksforgeeks.org/suffix-array-set-1-introduction/
-* https://academic.oup.com/bioinformatics/article/34/3/416/4160683
-* https://www.labri.fr/perso/ruricaru/bioinfo_master2/cours3.pdf
-* https://web.stanford.edu/class/cs262/presentations/lecture5.pdf
+* https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/
+* https://academic.oup.com/bioinformatics/article/34/3/416/4160683 
+* https://www.labri.fr/perso/ruricaru/bioinfo_master2/cours3.pdf   
 * https://users.dcc.uchile.cl/~gnavarro/ps/psc05.3.pdf
+* https://www.youtube.com/watch?v=kvVGj5V65io 
+* http://www.cs.jhu.edu/~langmea/resources/lecture_notes/10_bwt_and_fm_index_v2.pdf
+* https://github.com/ptrus/suffix-trees 
+* https://github.com/mccricardo/Rabin-Karp 
+
