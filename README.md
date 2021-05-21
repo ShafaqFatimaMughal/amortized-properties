@@ -7,9 +7,9 @@ This is being done by making an application for a Bio-Informatics Scientist who 
 
 ## Overview
 Main programming language used is python. This project imports several preinstalled packages but even numpy, matplotlib and PyQt libraries which you should install before attempting to run this application. 
-If you do not have these packages, you can install them by simply running the following in command prompt:
-* pip install -r requirements.txt <br>
-For the GUI the PyQt library is mainly being used. <br /> 
+If you do not have these packages, you can install them by simply running the following in command prompt:  
+pip install -r requirements.txt   
+For the GUI the PyQt library is mainly being used.    
 The application implements FM-Index for all the different features and uses. For comparison of efficieny of FM-Index with other data structures that were studied, Suffix Tree, Rabin Karp (using hashing), and Linear search have also been implemented.
 
 ## Running the Application
