@@ -1,8 +1,8 @@
 from Functions.SearchnAnalyze import *
 
 ######################################## Testing for 1 search #########################################################################################################
-# print(get_FM_build_time('DataSets/100000.txt'))
-# print(get_suffix_build_time('DataSets/100000.txt'))
+print(get_FM_build_time('DataSets/100000.txt'))
+print(get_suffix_build_time('DataSets/100000.txt'))
 
 # linear_find('DataSets/10000.txt', 'AAT')
 # suffix_tree_find('DataSets/10000.txt', 'AAT')
