@@ -12,9 +12,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog, QMainWindow, QTableWidget
 from PyQt5.QtCore import QDir
 from PyQt5.QtWidgets import QMessageBox
-from Resources.Implementation import *
+from FMImplementation import *
 from PyQt5.QtCore import QSize
-from Resources.SearchnAnalyze import *
+from SearchnAnalyze import *
 
 class Ui_SearchWindow(object):
 
