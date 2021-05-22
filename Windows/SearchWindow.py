@@ -186,6 +186,11 @@ class Ui_SearchWindow(object):
         self.DataSetButton.clicked.connect(self.openDialogBox)
         #preventing text in choose data textedit
         self.textEdit_2.setDisabled(True)
+        #clicking different radio buttons will reset the result box
+        self.radioButton1.clicked.connect(self.clear_radiobuttons)
+        self.radioButton2.clicked.connect(self.clear_radiobuttons)
+        self.radioButton3.clicked.connect(self.clear_radiobuttons)
+        self.radioButton4.clicked.connect(self.clear_radiobuttons)
 
     def retranslateUi(self, SearchWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -210,6 +215,11 @@ class Ui_SearchWindow(object):
         filename = QFileDialog.getOpenFileName()
         path = filename[0]
         self.textEdit_2.setText(str(path))
+        self.textEdit.clear()
+
+    def clear_radiobuttons(self):
+            self.textEdit.clear()
+
 
     def Search(self, query):
         if self.textEdit_2.toPlainText()=="":
