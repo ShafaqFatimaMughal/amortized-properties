@@ -13,8 +13,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFil
 from PyQt5.QtCore import  QSize
 from PyQt5.QtCore import QDir
 from PyQt5.QtWidgets import QMessageBox
-
-from Resources.SearchnAnalyze import *
+from SearchnAnalyze import *
 from Windows.SearchWindow import Ui_SearchWindow
 from Windows.CorrectionWindow import Ui_CorrectionWindow
 from Windows.AnalysisWindow import Ui_AnalysisWindow
