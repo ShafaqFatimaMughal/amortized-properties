@@ -9,11 +9,9 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog, QMainWindow, QTableWidget
-from PyQt5.QtCore import QDir
-from PyQt5.QtWidgets import QMessageBox
+from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog, QMainWindow, QTableWidget, QMessageBox
+from PyQt5.QtCore import QDir, QSize
 from FMImplementation import *
-from PyQt5.QtCore import QSize
 from SearchnAnalyze import *
 
 class Ui_SearchWindow(object):
@@ -218,7 +216,7 @@ class Ui_SearchWindow(object):
                 self.MessageBoxDirectoryError()
         elif self.textEdit1.toPlainText()=="":
                 self.MessageBoxGeneError()
-        elif self.radioButton1.isChecked()==False and self.radioButton2.isChecked()==False and self.radioButton3.isChecked()==False:
+        elif self.radioButton1.isChecked()==False and self.radioButton2.isChecked()==False and self.radioButton3.isChecked()==False and self.radioButton4.isChecked()==False:
                 self.MessageBoxDSError()
         else:
                 if self.radioButton1.isChecked(): #Fm Index search
@@ -231,7 +229,7 @@ class Ui_SearchWindow(object):
                         self.textEdit.setText(str(linear_find(self.textEdit_2.toPlainText(), query)))
 
                 elif self.radioButton4.isChecked(): #Hash Table
-                        pass
+                        self.textEdit.setText(str(rabin_karp_find(self.textEdit_2.toPlainText(), query)))
 
 
     def MessageBoxDirectoryError(self):
