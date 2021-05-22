@@ -46,7 +46,7 @@ class Implementation:
         # else return error.
         if approxpos==None:
             if len(Rs1)==1:
-                lines = lines[:Rs1[-1]] + str(string2) + lines[Rs1[-1]+len(string2):]
+                lines = lines[:Rs1[-1]] + str(string2) + lines[Rs1[-1]+len(string1):]
                 originalf = open(self.fileloc, "w")
                 originalf.writelines(lines)
                 originalf.close()
@@ -70,9 +70,9 @@ class Implementation:
             # Might be a possibility that multiple positions are found so rasie an error.
             if len(positions)>1:
                 return "Multiple instances found please specify better approximate position."
-
+            print(positions)
             # Change the string accordingly
-            lines = lines[:positions[-1]] + str(string2) + lines[positions[-1]+len(string2):]
+            lines = lines[:positions[-1]] + str(string2) + lines[positions[-1]+len(string1):]
             originalf = open(self.fileloc, "w")
             originalf.writelines(lines)
             originalf.close()
@@ -110,13 +110,13 @@ class Implementation:
             lst = []
             for i in range(len(Rs1)):
                 for j in range(len(Rs2)):
-                    if Rs1[i] < Rs2[j] and Rs2[j]-Rs1[i]-len(string1)-approxlength < d and Rs2[j]-Rs1[i]-len(string1)-approxlength > 0:
-                        d = Rs2[j]-len(string1) -approxlength - Rs1[i]
+                    if Rs1[i] < Rs2[j] and abs(Rs2[j]-Rs1[i]-len(string1)-approxlength) < d:
+                        d = abs(Rs2[j]-len(string1) -approxlength - Rs1[i])
 
             # Appending the indexes for approximate length onto a list
             for i in range(len(Rs1)):
                 for j in range(len(Rs2)):
-                    if Rs1[i] < Rs2[j] and Rs2[j]-Rs1[i]-len(string1)-approxlength == d:
+                    if abs(Rs1[i] < Rs2[j] and Rs2[j]-Rs1[i]-len(string1)-approxlength) == d:
                         lst.append((Rs1[i]+len(string1), Rs2[j]))
 
             # Handling returns if multiple instance found.
