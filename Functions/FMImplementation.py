@@ -1,4 +1,4 @@
-from FMIndex.fmindex import *
+from Functions.FMIndex.fmindex import *
 import math
 class Implementation:
     def __init__(self, location): 

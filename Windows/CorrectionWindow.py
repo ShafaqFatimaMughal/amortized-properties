@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog, QMessageBox
 from PyQt5.QtCore import QDir
-from FMImplementation import *
+from Functions.FMImplementation import *
 
 
 class Ui_CorrectionWindow(object):

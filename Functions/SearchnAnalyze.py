@@ -1,7 +1,7 @@
-from FMImplementation import *
-from FMIndex.fmindex import *
-from RabinKarp.rabinkarp import *
-from SuffixTree.suffixtree import *
+from Functions.FMImplementation import *
+from Functions.FMIndex.fmindex import *
+from Functions.RabinKarp.rabinkarp import *
+from Functions.SuffixTree.suffixtree import *
 from matplotlib import pyplot as plt
 import numpy as np
 import time, math, sys
@@ -214,7 +214,7 @@ def line_plot(x_axis, fm_y, suffix_y, rk_y=False, line_y=False):
     if type(rk_y) == type(x_axis) and type(line_y) == type(x_axis):
         plt.plot(x_axis, line_y, label='Linear Search', color='orange')    
         plt.plot(x_axis, rk_y, label='Rabin Karp (hashing)', color='hotpink')
-    plt.plot(x_axis, suffix_x, label='Suffix Tree', color='purple')
+    plt.plot(x_axis, suffix_y, label='Suffix Tree', color='purple')
     plt.plot(x_axis, fm_y, label='FM-Index', color=None)
     plt.legend()
     plt.xlabel('log( Number of DNA letters )')

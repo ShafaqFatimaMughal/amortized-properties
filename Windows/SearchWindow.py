@@ -11,8 +11,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog, QMainWindow, QTableWidget, QMessageBox
 from PyQt5.QtCore import QDir, QSize
-from FMImplementation import *
-from SearchnAnalyze import *
+from Functions.FMImplementation import *
+from Functions.SearchnAnalyze import *
 
 class Ui_SearchWindow(object):
 
@@ -39,7 +39,7 @@ class Ui_SearchWindow(object):
         self.textEdit.setStyleSheet("color: white;")
         self.textEdit.setObjectName("textEdit")
         self.label3 = QtWidgets.QLabel(self.centralwidget)
-        self.label3.setGeometry(QtCore.QRect(10, 300, 150, 21))
+        self.label3.setGeometry(QtCore.QRect(self.w//2 - 150//2 - 241//2 - 150//2 + 6, 300, 150, 21))
         font = QtGui.QFont()
         font.setFamily("Microsoft Uighur")
         font.setPointSize(14)

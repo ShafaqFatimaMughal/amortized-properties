@@ -1,5 +1,5 @@
 from collections import Counter
-from FMIndex.sa import *
+from Functions.FMIndex.sa import *
 import argparse
 import time
 import os
